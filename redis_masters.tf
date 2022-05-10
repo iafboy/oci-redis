@@ -23,7 +23,7 @@ resource "oci_core_instance" "redis1" {
   availability_domain = var.availablity_domain_name
   fault_domain        = "FAULT-DOMAIN-1"
   compartment_id      = var.compartment_ocid
-  display_name        = "${var.redis-prefix}1"
+  display_name        = "redis1"
   shape               = var.instance_shape
 
   dynamic "shape_config" {
@@ -38,7 +38,7 @@ resource "oci_core_instance" "redis1" {
     subnet_id        = oci_core_subnet.redis-subnet.id
     display_name     = "primaryvnic"
     assign_public_ip = true
-    hostname_label   = "${var.redis-prefix}1"
+    hostname_label   = "redis1"
   }
 
   source_details {
@@ -58,7 +58,7 @@ resource "oci_core_instance" "redis2" {
   availability_domain = var.availablity_domain_name
   fault_domain        = "FAULT-DOMAIN-1"
   compartment_id      = var.compartment_ocid
-  display_name        = "${var.redis-prefix}2"
+  display_name        = "redis2"
   shape               = var.instance_shape
 
   dynamic "shape_config" {
@@ -73,7 +73,7 @@ resource "oci_core_instance" "redis2" {
     subnet_id        = oci_core_subnet.redis-subnet.id
     display_name     = "primaryvnic"
     assign_public_ip = true
-    hostname_label   = "${var.redis-prefix}2"
+    hostname_label   = "redis2"
   }
 
   source_details {
@@ -93,7 +93,7 @@ resource "oci_core_instance" "redis3" {
   availability_domain = var.availablity_domain_name
   fault_domain        = "FAULT-DOMAIN-1"
   compartment_id      = var.compartment_ocid
-  display_name        = "${var.redis-prefix}3"
+  display_name        = "redis3"
   shape               = var.instance_shape
 
   dynamic "shape_config" {
@@ -108,7 +108,7 @@ resource "oci_core_instance" "redis3" {
     subnet_id        = oci_core_subnet.redis-subnet.id
     display_name     = "primaryvnic"
     assign_public_ip = true
-    hostname_label   = "${var.redis-prefix}3"
+    hostname_label   = "redis3"
   }
 
   source_details {
