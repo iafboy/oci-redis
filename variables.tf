@@ -8,7 +8,7 @@ variable "private_key_path" {}
 variable "region" {}
 variable "compartment_ocid" {}
 variable "availablity_domain_name" {}
-
+variable "home_path" {}
 variable "release" {
   description = "Reference Architecture Release (OCI Architecture Center)"
   default     = "1.1"
