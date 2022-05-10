@@ -67,6 +67,8 @@ compartment_ocid = "<compartment_ocid>"
 
 # Availablity Domain 
 availablity_domain_name = "<availablity_domain_name>" # for example "GrCH:US-ASHBURN-AD-1"
+# Local Path
+home_path = "<local_folder_path>"
 
 ````
 
