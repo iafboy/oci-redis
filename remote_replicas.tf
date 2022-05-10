@@ -28,7 +28,7 @@ resource "null_resource" "redis4_bootstrap" {
     }
 
     content     = data.template_file.redis_bootstrap_replica_template.rendered
-    destination = "~/redis_bootstrap_replica.sh"
+    destination = "/home/opc/redis_bootstrap_replica.sh"
   }
   provisioner "remote-exec" {
     connection {
@@ -62,7 +62,7 @@ resource "null_resource" "redis5_bootstrap" {
     }
 
     content     = data.template_file.redis_bootstrap_replica_template.rendered
-    destination = "~/redis_bootstrap_replica.sh"
+    destination = "/home/opc/redis_bootstrap_replica.sh"
   }
   provisioner "remote-exec" {
     connection {
@@ -96,7 +96,7 @@ resource "null_resource" "redis6_bootstrap" {
     }
 
     content     = data.template_file.redis_bootstrap_replica_template.rendered
-    destination = "~/redis_bootstrap_replica.sh"
+    destination = "/home/opc/redis_bootstrap_replica.sh"
   }
   provisioner "remote-exec" {
     connection {
