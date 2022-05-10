@@ -1,12 +1,12 @@
 resource "oci_logging_log_group" "redis_log_group" {
 
   compartment_id = var.compartment_ocid
-  display_name = "Redis Log Group"
+  display_name = "RedisLogGroup"
 }
 
 resource "oci_logging_log" "redis_log" {
 
-  display_name = "Redis Logs"
+  display_name = "RedisLogs"
 
   is_enabled         = true
   log_group_id       = oci_logging_log_group.redis_log_group.id
